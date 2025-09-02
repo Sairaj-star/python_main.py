@@ -13,7 +13,7 @@ from telegram.ext import (
 
 # --- CONFIGURATION ---
 TELEGRAM_TOKEN = "8379242623:AAHhaMkyNLJgwwV0roeVkMNrU4QShh0M9t8"
-HUGGING_FACE_TOKEN = "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"
+HUGGING_FACE_TOKEN = "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"
 API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
 
 # --- STATES ---
@@ -113,4 +113,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
