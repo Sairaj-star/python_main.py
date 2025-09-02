@@ -1,6 +1,7 @@
 import requests
 import io
 import random
+import os
 from telegram import Update
 from telegram.ext import (
     ApplicationBuilder,
@@ -13,7 +14,7 @@ from telegram.ext import (
 
 # --- CONFIGURATION ---
 TELEGRAM_TOKEN = "8379242623:AAHhaMkyNLJgwwV0roeVkMNrU4QShh0M9t8"
-HUGGING_FACE_TOKEN = "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"
+HUGGING_FACE_TOKEN = os.getenv("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")
 API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
 
 # --- STATES ---
@@ -113,6 +114,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
